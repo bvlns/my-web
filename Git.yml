@@ -10,5 +10,8 @@
        yum:
           - name: hhtpd
             state: present
-            
+      - name: start apache service
+          service:
+            - name: httpd
+              service: started
        

@@ -6,7 +6,7 @@
       yum:
         - name: git
           state: present 
-     - name: install maven
+     - name: install apache
        yum:
           - name: hhtpd
             state: present

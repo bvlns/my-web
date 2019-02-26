@@ -12,6 +12,6 @@
         - name: hhtpd
           state: present
     - name: start apache service
-        service:
+      service:
         - name: httpd
           service: started

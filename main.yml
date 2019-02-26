@@ -1,5 +1,5 @@
 ---
-- hosts: 192.10.1.205
+- hosts: 192.10.1.60
   name: installing git and maven
   become: yes
   tasks:

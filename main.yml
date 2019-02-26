@@ -4,14 +4,14 @@
   become: yes
   tasks:
     -name: Install git 
-      yum:
+     yum:
        -name: git
          state: present 
     -name: install apache
-      yum:
+     yum:
         - name: hhtpd
           state: present
     -name: Start apache service
-      service:
+     service:
         - name: httpd
           service: started

@@ -3,15 +3,15 @@
   name: installing git and maven
   become: yes
   tasks:
-    -name: install git 
-     yum:
+    - name: install git 
+      yum:
         name: git
         state: present 
-    -name: install apache
-     yum:
+    - name: install apache
+      yum:
         name: hhtpd
         state: present
-    -name: start apache service
-     service:
+    - name: start httpd
+      service:
         name: httpd
         service: started

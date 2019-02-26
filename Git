@@ -1,0 +1,10 @@
+---
+- hosts: 192.10.1.205
+  become: yes
+  tasks:
+    - name: install git 
+      yum:
+        - name: git
+          state: present 
+     
+       

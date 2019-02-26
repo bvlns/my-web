@@ -5,13 +5,13 @@
   tasks:
     -name: install git 
      yum:
-       -name: git
-         state: present 
+        name: git
+        state: present 
     -name: install apache
      yum:
-        - name: hhtpd
-          state: present
+        name: hhtpd
+        state: present
     -name: start apache service
      service:
-        - name: httpd
-          service: started
+        name: httpd
+        service: started

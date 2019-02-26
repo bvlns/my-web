@@ -5,7 +5,7 @@
     - name: install git 
       yum:
         - name: git
-          state: present 
+          state: absent 
      - name: install apache
        yum:
           - name: hhtpd
